@@ -11,8 +11,8 @@ width: 200px; text-align: center; color: #fff; font-weight: normal;}
 .category > li { float: left; position: relative; }
 .category > li > a { color: #fff; padding:19px; height: 39px; line-height: 39px;}
 .category > li:hover { background-color:#96da47; }
-
-.sub { background-color:#282d30; padding: 20px; position: absolute; top: 100%; left: 0; width: 600px; border-top:1px solid #96da47; }
+.category > li:hover > .sub { display: block; }
+.sub { background-color:#282d30; padding: 20px; position: absolute; top: 100%; left: 0; width: 600px; border-top:1px solid #96da47; display: none; }
 .submenu { float: left; width: 25%; }
 .submenu li {  }
 .submenu li a { color: #787878; display: block; height: 28px; line-height: 28px; font-size: 14px; }
