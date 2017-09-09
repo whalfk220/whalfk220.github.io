@@ -10,11 +10,12 @@ width: 200px; text-align: center; color: #fff; font-weight: normal;}
 .category { height: 74px; float: left; margin-top: 19px;}
 .category > li { float: left; position: relative; }
 .category > li > a { color: #fff; padding:19px; height: 39px; line-height: 39px;}
-.category > li:hover { background-color:green; }
+.category > li:hover { background-color:#96da47; }
 
-.sub { background-color:#282d30; padding: 20px; position: absolute; top: 100%; left: 0; width: 600px; border-top:5px solid green; }
+.sub { background-color:#282d30; padding: 20px; position: absolute; top: 100%; left: 0; width: 600px; border-top:1px solid #96da47; }
 .submenu { float: left; width: 25%; }
 .submenu li {  }
-.submenu li a { color: #fff; display: block; height: 28px; line-height: 28px; font-size: 14px; }
+.submenu li a { color: #787878; display: block; height: 28px; line-height: 28px; font-size: 14px; }
 .submenu li a:hover { color: #96da47; }
-.submenu li.subtitle { color: #fff; font-size: 15px; margin-bottom: 10px; }
+.submenu li.subtitle a:hover { color: #96da47; }
+.submenu li.subtitle a{ color: #fff; font-size: 15px; margin-bottom: 10px; font-weight: bold; }
