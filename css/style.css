@@ -1,3 +1,14 @@
+@font-face{
+	font-family:"Nanum Gothic";
+	src:url('../fonts/fontawesome-webfont.eot');
+	src:url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/fontawesome-webfont.woff') format('woff'),
+		url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+	url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+	url('../fonts/fontawesome-webfont.svg#fontawesome-webfont') format('svg');
+	src:local(※), url('../fonts/fontawesome-webfont.woff') format('woff');
+}
+
 *{ margin: 0; padding: 0; }
 ul,li { list-style:none; }
 a { text-decoration: none; }
@@ -23,3 +34,61 @@ transform: translateY(50px); opacity: 0; z-index: 5;
 .submenu li a:hover { color: #96da47; }
 .submenu li.subtitle a:hover { color: #96da47; }
 .submenu li.subtitle a{ color: #fff; font-size: 15px; margin-bottom: 10px; font-weight: bold; }
+
+
+#dealSection { padding: 40px 0; background-color:#96da47; }
+.deal { height: 46px; text-align: center; line-height:46px; }
+.deal > div { display: inline-block; vertical-align: middle; }
+.deal_title { color:#fff; font-family: impact; font-size: 30px; }
+.dash { width: 40px; height: 1px; background: #222; margin: 0 10px; }
+.deal_desc {font-size: 24px; }
+.deal_btn { width:140px; background-color:#fff; color:#222; font-weight: bold; margin-left: 20px; font-size:12px; cursor: pointer; position: relative; }
+.deal_btn::after { 
+	content: 'VIEW ALL OFFERS'; /*가상선택자의 필수 속성*/ display: block; 
+	position: absolute; top:0; left:0; right:0; bottom:0; background:#222;
+	color:#fff; /*z-index: -1;*/
+	transform: scaleY(0);
+	transform-origin: bottom; 
+	transition: all .4s ease;
+}
+.deal_btn:hover::after {
+	transform: scaleY(1);
+}
+
+
+#productView { padding-top:80px; margin-bottom: 100px; }
+.product_title { text-align:center; font-family:impact; font-size:30px; }
+.under_line { margin:20px auto 30px; width:30px; height:1px; background-color: #d0d2d2; }
+
+
+.product_view { width:1200px; margin:0 auto 50px; }
+.product_view .img_list { float: left; position: relative; width:280px; margin: 0 10px; overflow: hidden; }
+.product_view .img_list .top_img { position: absolute; top:0; left:0; transform: scale(0,0.5); transition: all .4s ease; }
+.product_view .img_list:hover .top_img { transform: scale(1,1); }
+.product_view .img_list:hover .quickview { display: block; transform: scale(0,0.5);}
+
+
+
+.product_hover_block { width: 270px; height: 50px; position: absolute; bottom:-60px; left: 5px;   transition: all .4s ease; cursor: pointer; }
+.product_view .img_list:hover .product_hover_block { bottom:5px; }
+.product_hover_block > div { display: inline-block; }
+.add_compare, .add_wishlist { width: 50px; height: 50px; background:#fff; text-align: center; line-height: 50px; } 
+.add_cart { width: 158px; height: 50px; background:#fff; text-align: center; line-height: 50px; }
+.product_hover_block > div > i:hover{ color:#96da47; }
+.product_hover_block > div > i > span { margin-left:5px; }
+.product_hover_block:hover { width: 270px; height: 50px; position: absolute; bottom:5px; left: 5px; }
+
+.quickview { display: none; text-align: center; width: 40px; height: 40px; border-radius: 50%; background:#96da47; color: #fff; position: absolute; top: 5px; right: 5px; line-height: 40px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
