@@ -15,7 +15,7 @@ width: 200px; text-align: center; color: #fff; font-weight: normal;}
 .category > li:hover { background-color:#96da47; }
 .category > li:hover > .sub { visibility: visible; transform: translateY(0px); opacity: 1; transition: all .6s ease; }
 .sub { background-color:#282d30; padding: 20px; position: absolute; top: 100%; left: 0; width: 600px; border-top:1px solid #96da47; visibility: hidden; 
-transform: translateY(50px); opacity: 0;
+transform: translateY(50px); opacity: 0; z-index: 5;
 }
 .submenu { float: left; width: 25%; }
 .submenu li {  }
